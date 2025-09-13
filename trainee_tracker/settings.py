@@ -13,7 +13,7 @@ DEBUG = os.getenv("DJANGO_DEBUG", "False") == "True"
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "https://trainee-tracker-5.onrender.com/",  # your real Render domain
+    "https://trainee-tracker-6.onrender.com/",  # your real Render domain
 ]
 
 
