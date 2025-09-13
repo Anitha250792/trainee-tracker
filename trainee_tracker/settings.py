@@ -4,17 +4,17 @@ from django.core.management.utils import get_random_secret_key
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# ✅ Secret Key
-SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
+import os
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "fallback-secret-key")
+DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
-# ✅ Debug mode
-DEBUG = os.getenv("DJANGO_DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "https://trainee-tracker-6.onrender.com/",  # your real Render domain
+    "trainee-tracker-7.onrender.com",
 ]
+
 
 
 # Applications
