@@ -10,8 +10,12 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # ✅ Debug mode
 DEBUG = os.getenv("DJANGO_DEBUG", "False") == "True"
 
-# ✅ Render settings
-ALLOWED_HOSTS = ["*"]  # Or set your Render domain: ["your-app.onrender.com"]
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "trainee-tracker-backend.onrender.com",  # your real Render domain
+]
+
 
 # Applications
 INSTALLED_APPS = [

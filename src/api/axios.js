@@ -2,10 +2,7 @@ import axios from "axios";
 
 // 👇 Change this if your backend runs elsewhere
 const api = axios.create({
-  baseURL: "http://127.0.0.1:8080/api/", 
-  headers: {
-    "Content-Type": "application/json",
-  },
+   baseURL: "https://trainee-tracker-backend.onrender.com/api/", // your Render backend
 });
 
 // --- Project APIs ---
