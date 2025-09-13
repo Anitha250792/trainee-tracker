@@ -9,9 +9,10 @@
     "preview": "npx vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "axios": "^1.12.1",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
-    "vite": "^5.0.0",
-    "@vitejs/plugin-react": "^4.0.0"
+    "vite": "^5.0.0"
   }
 }
