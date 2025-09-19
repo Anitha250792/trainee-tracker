@@ -3,45 +3,20 @@
 __pycache__/
 *.pyo
 *.pyd
-*.db
+*.swp
 *.sqlite3
+env/
+venv/
+.venv/
+*.log
 
 # Django
-*.log
+*.db
 *.pot
-*.pyc
-local_settings.py
-db.sqlite3
+*.py[cod]
+*.so
 media/
 staticfiles/
-
-# Virtual environment
-venv/
+local_settings.py
 .env
-.env.*
-
-# IDE / Editor
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Node / frontend leftovers
-node_modules/
-dist/
-build/
-*.js
-*.jsx
-*.css
-*.ts
-*.tsx
-package.json
-package-lock.json
-tailwind.config.js
-vite.config.*
-public/
-src/
-
-# System files
 .DS_Store
-Thumbs.db
