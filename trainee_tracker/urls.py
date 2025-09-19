@@ -1,9 +1,13 @@
 from django.contrib import admin
-from django.urls import path, include, re_path
-from django.views.generic import TemplateView
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from tracker.views import ProjectViewSet, ReactAppView
+
+router = DefaultRouter()
+router.register(r'projects', ProjectViewSet, basename='project')
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include("tracker.urls")),  # your API
-    re_path(r"^.*$", TemplateView.as_view(template_name="index.html")),  # React app
+    path("api/", include(router.urls)),   # 👈 all API endpoints now under /api/
+    path("", ReactAppView.as_view(), name="react-app"),
 ]
