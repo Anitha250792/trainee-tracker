@@ -1,39 +1,47 @@
-# Python cache
-__pycache__/
+# Python
 *.pyc
+__pycache__/
 *.pyo
 *.pyd
-*.py[cod]
-*$py.class
+*.db
+*.sqlite3
 
-# Environment
+# Django
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# Virtual environment
 venv/
 .env
 .env.*
 
-# Django
-*.log
-db.sqlite3
-media/
-staticfiles/
-*.pot
-*.pyc
-*.mo
-
-# IDEs
+# IDE / Editor
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# OS files
+# Node / frontend leftovers
+node_modules/
+dist/
+build/
+*.js
+*.jsx
+*.css
+*.ts
+*.tsx
+package.json
+package-lock.json
+tailwind.config.js
+vite.config.*
+public/
+src/
+
+# System files
 .DS_Store
 Thumbs.db
-
-# Logs
-*.log
-*.sqlite3
-
-# Coverage
-htmlcov/
-.coverage
-*.cover
-*.py,cover
